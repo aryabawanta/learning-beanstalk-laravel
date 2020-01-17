@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    for ($i = 0; $i < 50; $i++) {
+        \App\Jobs\FindFavoriteOS::dispatch();
+    }
+
+    return '50 Jobs dispatched!';
 });
