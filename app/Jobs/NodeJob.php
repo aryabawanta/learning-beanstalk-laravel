@@ -28,7 +28,7 @@ class NodeJob implements ShouldQueue
      *
      * @return void
      */
-    public function handle($data)
+    public function handle($job, $data)
     {
         Log::info('My Favorite OS is: ' . $data);
     }
