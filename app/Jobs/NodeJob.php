@@ -30,6 +30,6 @@ class NodeJob implements ShouldQueue
      */
     public function handle($job, $data)
     {
-        Log::info('My Favorite OS is: ' . $data);
+        Log::info('Job : ' . $job);
     }
 }
