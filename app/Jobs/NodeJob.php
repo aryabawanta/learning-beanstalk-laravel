@@ -28,8 +28,8 @@ class NodeJob implements ShouldQueue
      *
      * @return void
      */
-    public function handle($job, $data)
+    public function handle()
     {
-        Log::info('Job : ' . $job);
+        Log::info('Job from node handled');
     }
 }
