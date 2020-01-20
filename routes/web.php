@@ -18,11 +18,3 @@ Route::get('/', function () {
 
     return '50 Jobs dispatched!';
 });
-
-Route::get('/addjobs', function () {
-    for ($i = 0; $i < 50; $i++) {
-        \App\Jobs\FindFavoriteOS::dispatch();
-    }
-
-    return '50 Jobs dispatched!';
-});
